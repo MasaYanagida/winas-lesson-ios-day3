@@ -1,0 +1,6 @@
+framework module Pods_Day3Sample {
+  umbrella header "Pods-Day3Sample-umbrella.h"
+
+  export *
+  module * { export * }
+}
