@@ -16,5 +16,8 @@ extension UIFont {
     class func defaultBold(_ ofSize: CGFloat) -> UIFont {
         return UIFont(name: "HiraginoSans-W6", size: ofSize)!
     }
+    class func faBrand(_ ofSize: CGFloat) -> UIFont {
+        return UIFont(name: "FontAwesome5Brands-Regular", size: ofSize)!
+    }
 }
 
