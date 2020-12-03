@@ -18,6 +18,7 @@ class DetailView: UIView {
     var content: Content? {
         didSet {
             guard let content = self.content else { return }
+            iconView.image = UIImage(named: content.iconName)
             nameLabel.attributedText = content.name.styled(with: StringStyle(
                 .font(UIFont.defaultBold(16)), .alignment(.left)
             ))
@@ -44,6 +45,7 @@ class DetailView: UIView {
         }
     }
     
+    @IBOutlet private dynamic weak var iconView: UIImageView!
     @IBOutlet private dynamic weak var nameLabel: UILabel!
     @IBOutlet private dynamic weak var appsLabel: UILabel!
     @IBOutlet private dynamic weak var introductionLabel: UILabel!

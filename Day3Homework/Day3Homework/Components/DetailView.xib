@@ -141,6 +141,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="appsLabel" destination="Jqc-nc-TWp" id="j1q-PF-CUE"/>
+                <outlet property="iconView" destination="YNa-EP-g1L" id="nmD-nQ-DR8"/>
                 <outlet property="imageView" destination="pcf-Yw-LjO" id="4te-Go-4vQ"/>
                 <outlet property="introductionLabel" destination="wLV-55-Paa" id="yXs-QN-rRZ"/>
                 <outlet property="nameLabel" destination="4bX-rL-iPE" id="N1B-ia-kha"/>
