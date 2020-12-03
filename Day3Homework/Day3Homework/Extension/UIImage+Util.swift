@@ -11,11 +11,61 @@ import UIKit
 
 enum BrandIcon {
     case twitter, reddit, instagram, snapchat, line, whatsapp, fbmessenger
+    
+    static func random() -> BrandIcon {
+        return randomValue([.twitter, .reddit, .instagram, .snapchat, .line, .whatsapp, .fbmessenger])
+    }
+    
+    var text: String {
+        switch self {
+        case .twitter: return "\u{f099}"
+        case .reddit: return "\u{f281}"
+        case .instagram: return "\u{f16d}"
+        case .snapchat: return "\u{f2ac}"
+        case .line: return "\u{f3c0}"
+        case .whatsapp: return "\u{f232}"
+        case .fbmessenger: return "\u{f39f}"
+        }
+    }
+    var color: UIColor {
+        let code: Int
+        switch self {
+        case .twitter: code = 0x55acee
+        case .reddit: code = 0xff4500
+        case .instagram: code = 0xc13584
+        case .snapchat: code = 0xfffc00
+        case .line: code = 0x1dcd00
+        case .whatsapp: code = 0x25d366
+        case .fbmessenger: code = 0x0078FF
+        }
+        return UIColor.hexColor(code)
+    }
+    var name: String {
+        switch self {
+        case .twitter: return "Twitter"
+        case .reddit: return "Reddit"
+        case .instagram: return "Instagram"
+        case .snapchat: return "Snapchat"
+        case .line: return "LINE"
+        case .whatsapp: return "Whatsapp"
+        case .fbmessenger: return "Facebook Messenger"
+        }
+    }
 }
 
 // MARK: - UIImage
 
 extension UIImage {
+    class func brandIcon(
+        icon: BrandIcon,
+        color: UIColor,
+        fontSize: CGFloat,
+        size: CGSize? = nil
+        ) -> UIImage? {
+        let font = UIFont.faBrand(fontSize)
+        return fontImage(font: font, name: icon.text, color: color, fontSize: fontSize, size: size)
+    }
+    
     class func fontImage(
         font: UIFont,
         name: String,
