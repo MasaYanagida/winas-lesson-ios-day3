@@ -1,8 +1,8 @@
 //
 //  Content.swift
-//  Day3Sample
+//  Day3Homework
 //
-//  Created by 柳田昌弘 on 2020/12/02.
+//  Created by 柳田昌弘 on 2020/12/03.
 //
 
 import Foundation
@@ -18,12 +18,25 @@ class Content {
     var iconName: String = "icon"
     var imageName: String = "sample"
     var introduction: String = """
-山田太郎と申します。本日はよろしくお願い致します。
-○○大学経済学部を卒業後、2012年から××株式会社で法人営業を５年間経験しました。
-主に小売・物流業界に対して業務効率化のためのIT支援ツールを提案営業し、全ての年度で目標達成率130％、３年目以降は全国の法人営業部で常に上位５％以内の成績を維持してきました。
-改めまして、どうぞよろしくお願い致します。
+初代ビーコンズフィールド伯爵ベンジャミン・ディズレーリ（Benjamin Disraeli, 1st Earl of Beaconsfield, KG, PC, FRS、1804年12月21日 - 1881年4月19日）は、イギリスの政治家、小説家、貴族。
+ユダヤ人でありながら保守党内で上り詰めることに成功し、ダービー伯爵退任後に代わって保守党首となり、2期にわたって首相（在任：1868年、1874年 - 1880年）を務めた。庶民院の過半数を得られていなかった第一次内閣は短命の選挙管理内閣に終わったが、庶民院の過半数を制していた第二次内閣は「トーリー・デモクラシー（Tory democracy）」と呼ばれる一連の社会政策の内政と帝国主義の外交を行って活躍した。自由党のウィリアム・グラッドストンと並んでヴィクトリア朝の政党政治を代表する人物である。また、小説家としても活躍した。野党期の1881年に死去し、以降ソールズベリー侯爵が代わって保守党を指導していく。
 """
-    var showFavoriteButton: Bool = randomValue([true, false])
+    var media: [BrandIcon] {
+        var ret = [BrandIcon]()
+        if (randomValue([true, false])) {
+            ret.append(.twitter)
+        }
+        if (randomValue([true, false])) {
+            ret.append(.instagram)
+        }
+        if (randomValue([true, false])) {
+            ret.append(.reddit)
+        }
+        if (randomValue([true, false])) {
+            ret.append(.snapchat)
+        }
+        return ret
+    }
     
     static func create() -> Content {
         // https://yamagata.int21h.jp/tool/testdata/

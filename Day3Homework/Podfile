@@ -1,0 +1,13 @@
+platform :ios, '11.0'
+swift_version = '5.3'
+use_frameworks!
+
+def import_pods
+  pod 'SnapKit'
+  pod 'Nuke'
+  pod 'BonMot'
+end
+
+target 'Day3Homework' do
+  import_pods
+end

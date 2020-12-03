@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Day3Homework/Pods-Day3Homework-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BonMot/BonMot.framework
+${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
