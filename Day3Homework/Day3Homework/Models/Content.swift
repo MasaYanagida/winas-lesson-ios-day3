@@ -15,7 +15,7 @@ func randomValue<T>(_ array: [T]) -> T {
 class Content {
     var name: String = ""
     var address: String = ""
-    var iconName: String = "icon"
+    var iconName: String = "userIcon"
     var imageName: String = "sample"
     var introduction: String = """
 初代ビーコンズフィールド伯爵ベンジャミン・ディズレーリ（Benjamin Disraeli, 1st Earl of Beaconsfield, KG, PC, FRS、1804年12月21日 - 1881年4月19日）は、イギリスの政治家、小説家、貴族。
