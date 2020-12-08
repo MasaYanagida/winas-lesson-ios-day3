@@ -9,7 +9,6 @@ import UIKit
 
 class DetailView: UIView {
     
-    // TODO : implement this
     
     class func createFromNib() -> DetailView {
         let xib = UINib(nibName: "DetailView", bundle: nil)
