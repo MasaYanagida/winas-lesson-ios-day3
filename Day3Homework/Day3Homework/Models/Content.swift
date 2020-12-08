@@ -35,6 +35,15 @@ class Content {
         if (randomValue([true, false])) {
             ret.append(.snapchat)
         }
+        if (randomValue([true, false])) {
+            ret.append(.line)
+        }
+        if (randomValue([true, false])) {
+            ret.append(.whatsapp)
+        }
+        if (randomValue([true, false])) {
+            ret.append(.fbmessenger)
+        }
         return ret
     }
     
