@@ -23,6 +23,7 @@
 		338CC17825771DB500807998 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338CC17725771DB500807998 /* DetailView.swift */; };
 		338CC17C25771ECC00807998 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338CC17B25771ECC00807998 /* Content.swift */; };
 		B4EB551D2F7DC8D49278FEEE /* Pods_Day3Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD9F8177E99338D8113217D /* Pods_Day3Sample.framework */; };
+		EBEDFAB3257A38FE00EC2B18 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEDFAB2257A38FE00EC2B18 /* UIImageView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		338CC17B25771ECC00807998 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		9E6EFDFA7C8535A96361507B /* Pods-Day3Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Day3Sample.release.xcconfig"; path = "Target Support Files/Pods-Day3Sample/Pods-Day3Sample.release.xcconfig"; sourceTree = "<group>"; };
 		CCD9F8177E99338D8113217D /* Pods_Day3Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Day3Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBEDFAB2257A38FE00EC2B18 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				33406B8325733CE90083F285 /* UIFont+Util.swift */,
 				33406B8625733E650083F285 /* UIImage+Util.swift */,
 				33406B8925733F4E0083F285 /* UIColor+Util.swift */,
+				EBEDFAB2257A38FE00EC2B18 /* UIImageView+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBEDFAB3257A38FE00EC2B18 /* UIImageView+Ext.swift in Sources */,
 				33406B8425733CE90083F285 /* UIFont+Util.swift in Sources */,
 				338CC17825771DB500807998 /* DetailView.swift in Sources */,
 				33406B6425733AD30083F285 /* ViewController.swift in Sources */,

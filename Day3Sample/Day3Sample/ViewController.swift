@@ -15,6 +15,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string: ImageFileName)!
+        let options = ImageLoadingOptions(
+            placeholder: UIImage(named: "placeholder"),
+            transition: .fadeIn(duration: 0.33)
+        )
+        Nuke.loadImage(with: url, options: options, into: imageView)
     }
     
     @IBOutlet private dynamic weak var imageView: UIImageView!
