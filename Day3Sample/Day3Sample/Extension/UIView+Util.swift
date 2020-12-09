@@ -10,6 +10,15 @@ import UIKit
 // MARK: - UIView
 
 extension UIView {
+    var frameWidth: CGFloat {
+        get {
+            return self.frame.size.width
+        }
+        set {
+            self.frame.size.width = newValue
+        }
+    }
+    
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
