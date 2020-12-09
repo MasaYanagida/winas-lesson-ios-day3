@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/anemone/work/03_internal/61_lesson/01_app/iOS/day3/99_git/winas-lesson-ios-day3/Day3Homework/Day3Homework/Components/DetailView.xib">
+   </FileRef>
+   <FileRef
       location = "group:Day3Homework.xcodeproj">
    </FileRef>
    <FileRef
