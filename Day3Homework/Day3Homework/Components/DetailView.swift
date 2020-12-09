@@ -41,10 +41,10 @@ class DetailView: UIView {
         name.attributedText = content.name.styled(with: StringStyle(
                 .font(UIFont.boldSystemFont(ofSize: 20))
         ))
-        //introduction.attributedText = content.introduction.styled(with: StringStyle(
-        //    .font(UIFont.boldSystemFont(ofSize: 16))
-        //))
-        introduction.text = "aaaaa"
+        introduction.attributedText = content.introduction.styled(with: StringStyle(
+            .font(UIFont.boldSystemFont(ofSize: 16))
+        ))
+        //introduction.text = "aaaaa"
         backgroundImage.image = UIImage(named: content.imageName)
         
         //self.snsView = UIView()
